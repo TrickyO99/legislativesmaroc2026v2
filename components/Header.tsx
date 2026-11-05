@@ -13,7 +13,7 @@ export function Header() {
         className="h-[3px] w-full"
         style={{
           background:
-            "linear-gradient(to right, var(--brand-red), var(--brand-green))",
+            "var(--brand-green)",
         }}
       />
       <div className="border-b border-black/5 bg-surface py-1.5 text-center text-[11px] tracking-wide text-black/45 dark:border-white/10 dark:text-white/40">
@@ -23,11 +23,11 @@ export function Header() {
         className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4"
         style={{
           background:
-            "linear-gradient(to right, var(--brand-red-deep), var(--brand-red-deep-2))",
+            "var(--brand-red-deep)",
         }}
       >
         <Link href="/" className="font-semibold tracking-tight text-white">
-          🗳️ Législatives<span className="text-brand-green">Maroc2026</span>
+          Législatives<span className="text-brand-green">Maroc2026</span>
         </Link>
         <div className="flex items-center gap-5 text-sm">
           <Link href="/partis" className="text-white/85 hover:text-white">

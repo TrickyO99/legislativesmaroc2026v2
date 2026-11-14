@@ -37,7 +37,10 @@ const notoSansArabic = Noto_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  icons: { icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='22' fill='%230B3D2E'/%3E%3Cpath d='M30 30H98L92 54H74L66 98H42L50 54H24Z' fill='%23C6F432'/%3E%3C/svg%3E" },
+  icons: { icon: [{ url: "https://odtriki.com/trikolitics/favicon.ico", sizes: "48x48" }, { url: "https://odtriki.com/trikolitics/favicon.svg", type: "image/svg+xml" }], apple: "https://odtriki.com/trikolitics/apple-touch-icon.png" },
+  alternates: { canonical: "https://odtriki.com/trikolitics/monvote/" },
+  openGraph: { type: "website", siteName: "Trikorporation", title: "MonVote.ma | Trikolitics | Trikorporation", url: "https://odtriki.com/trikolitics/monvote/", images: [{ url: "https://odtriki.com/img/social/og-trikolitics-monvote.png", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", images: ["https://odtriki.com/img/social/og-trikolitics-monvote.png"] },
   title: "Législatives Maroc 2026 — Trouvez le parti qui vous correspond",
   description:
     "Un outil citoyen et indépendant pour comparer vos opinions à celles des partis politiques marocains avant les élections législatives de 2026.",
@@ -58,7 +61,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <ConsentBanner />
           </LocaleProvider>
           <AdSenseLoader />
-          <Script src="https://odtriki.com/shell/tk.js?v=3" data-name="MonVote.ma" strategy="afterInteractive" />
+          <Script src="https://odtriki.com/shell/tk.js?v=6" data-name="MonVote.ma" data-cat="trikolitics" strategy="afterInteractive" />
         </ConsentProvider>
       </body>
     </html>

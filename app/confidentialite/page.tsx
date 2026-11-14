@@ -81,7 +81,7 @@ export default function ConfidentialitePage() {
           d&apos;effacement, d&apos;opposition et de portabilité sur vos
           données, ainsi que du droit de retirer votre consentement à tout
           moment (voir la page{" "}
-          <a href="/cookies" className="underline">
+          <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/cookies`} className="underline">
             Cookies
           </a>{" "}
           pour gérer votre préférence publicitaire). Pour toute demande,
